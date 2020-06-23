@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 401008083376722859}
   - component: {fileID: 5727770408304151469}
-  - component: {fileID: -2508333612696742460}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -82,15 +81,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-2508333612696742460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3123737950316184367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfbb4ab330af16d47a7a1b8dd0da241f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
