@@ -28,8 +28,8 @@ public class DynamicCrosshair : MonoBehaviour
                 _crosshairDown.GetComponent<Transform>().localPosition = new Vector3(0, -(_initialPosition - _tempSpread), 0);
                 _crosshairLeft.GetComponent<Transform>().localPosition = new Vector3(-(_initialPosition - _tempSpread), 0, 0);
                 _crosshairRight.GetComponent<Transform>().localPosition = new Vector3(_initialPosition - _tempSpread, 0, 0);
-                _mainCamera.GetComponent<Transform>().localPosition = new Vector3(1, 2, _initialCameraPosition + _tempSpread/20);
-                _tempSpread += 0.2f;
+                _mainCamera.GetComponent<Transform>().localPosition = new Vector3(1, 1, _initialCameraPosition + _tempSpread/20);
+                _tempSpread += 0.5f;
             }      
         }
         else
@@ -38,7 +38,7 @@ public class DynamicCrosshair : MonoBehaviour
             _crosshairDown.GetComponent<Transform>().localPosition = new Vector3(0, -(_initialPosition + _spread), 0);
             _crosshairLeft.GetComponent<Transform>().localPosition = new Vector3(-(_initialPosition + _spread), 0, 0);
             _crosshairRight.GetComponent<Transform>().localPosition = new Vector3(_initialPosition + _spread, 0, 0);
-            _mainCamera.GetComponent<Transform>().localPosition = new Vector3(1, 2, _initialCameraPosition);
+            _mainCamera.GetComponent<Transform>().localPosition = new Vector3(1, 1, _initialCameraPosition);
             _tempSpread = 1;
         }  
     }
