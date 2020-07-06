@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3750503861191445995}
   - component: {fileID: 3750503861191445996}
   - component: {fileID: 1729871381}
+  - component: {fileID: 1962831151}
   m_Layer: 0
   m_Name: Invaders Spawn Manager
   m_TagString: Untagged
@@ -45,13 +46,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnedEnemies: []
-  startPosX: -5
-  startPosY: 5
-  enemiesToSpawnInRow: 5
+  startPosition: {x: -6, y: 5, z: 0}
+  enemiesToSpawnInRow: 12
+  invaderContainer: {fileID: 0}
   enemiesToUse:
   - {fileID: 3123737950316184367, guid: e32986595fdf4984381ea1bfcf9aa7d2, type: 3}
-  - {fileID: 3123737950316184367, guid: e32986595fdf4984381ea1bfcf9aa7d2, type: 3}
-  - {fileID: 3123737950316184367, guid: e32986595fdf4984381ea1bfcf9aa7d2, type: 3}
+  - {fileID: 6513157230875770649, guid: 1a53fdb4af126f24c9d84cd567c501b4, type: 3}
+  - {fileID: 1032984985573396017, guid: bc1b7d4d70222ce459c19087e2d27bb6, type: 3}
 --- !u!114 &1729871381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,12 +60,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3750503861191445994}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfbb4ab330af16d47a7a1b8dd0da241f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  list: {fileID: 3750503861191445996}
-  stepSpeed: 0.5
-  rightBorderX: 7
-  leftBorderX: -7
+  invadersList: {fileID: 3750503861191445996}
+  pauseBetweenStep: 0.5
+  stepDistance: 0.2
+  changeColumnDistance: 0.1
+  rightBorderX: 6
+  leftBorderX: -6
+--- !u!114 &1962831151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3750503861191445994}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71dafd10e84a70e4999a56e9e8e9496e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
